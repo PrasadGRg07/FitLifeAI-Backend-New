@@ -1,0 +1,2 @@
+# This file ensures the models/ directory exists in git.
+# .pkl model files are trained during the Railway build step and saved here.

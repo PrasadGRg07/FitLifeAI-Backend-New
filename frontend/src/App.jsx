@@ -31,7 +31,7 @@ function AppContent() {
   return (
     <>
       {!hideNavbar && <Navbar />}
-      <div className="min-h-screen bg-gray-50">
+      <div className={`min-h-screen bg-gray-50 ${!hideNavbar && location.pathname !== "/" ? "pt-16" : ""}`}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/features" element={<FeaturesPage />} />
